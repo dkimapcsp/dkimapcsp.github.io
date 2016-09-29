@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="portfolio/greyscale.css">
+
+<style>
+body,h1 {font-family: "Montserrat", sans-serif; font-weight: bold}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 20px}
+</style>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-top w3-center w3-xxlarge" style="display:none;padding-top:220px" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-jumbo w3-right w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="index.html" class="w3-text-grey w3-hover-black">David's Homepage</a>
+  <a href="portfolio/portfolio.html" class="w3-text-grey w3-hover-black">Portfolio</a>
+ </nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+<div class="w3-container w3-padding-32 w3-center w3-opacity w3-margin-bottom">
+  <span class="w3-opennav w3-xxlarge w3-right w3-margin-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+  <div class="w3-clear"></div>
+  <h1>David's Homepage</h1>
+  <p>My Hobbies, My Inspirations, My Dreams</p>
+  <p align="left" class="w3-padding-16"><button class="w3-btn" onclick="myFunction()">Toggle Grid Padding</button></p>
+  <p align="left"> click this above and see what happens!</p> 
+  <p align="left">David's Bio: David is a senior in Reuben S. Ayala High School who aspires to be an engineer, businessmen, and a writer. He works diligently to strive for his goals.</p>
+  </div>
+
+<!-- Photo Grid -->
+<div id="myGrid">
+  <div class="w3-third">
+	<img src="images/download.jpg" style="width:100%">
+    <img src="images/James-Brown-Tami-Show1-320x240-1406655277.jpg" style="width:100%">
+    <img src="images/6291_60_ES335_Slim_Neck_VOS_Antique_Faded_Cherry_A00660_1.jpg" style="width:100%">
+    <img src="images/MAZDARX-7-FD--935_7.jpg" style="width:100%">
+    <img src="images/cropped-serve-the-people-interference3.jpg" style="width:100%">
+    <img src="images/biggie.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="images/e45a49a7-4807-4bb4-8d0d-876ec9f56965.JPG" style="width:100%">
+    <img src="images/Eric_-slowhand-_Clapton.jpg" style="width:100%">
+    <img src="images/111af48319736115f8eafaec195bd5ee.jpg" style="width:100%">
+    <img src="images/a_flashback_malcolm_150219.jpg" style="width:100%">
+    <img src="images/images.jpg" style="width:100%">
+    <img src="images/20160823_231041.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="images/LA_San_Gabriel_Mountains.jpg" style="width:100%">
+    <img src="images/2017_nissan_nismo_gtr_02.jpg" style="width:100%">
+    <img src="images/ghandi.jpg" style="width:100%">
+    <img src="images/gallery-1453910355-e39-bmw-m5.jpg" style="width:100%">
+    <img src="images/Beenzino-Break-300x300@2x.jpg" style="width:100%">
+    <img src="images/McLaren 570S performance.jpg" style="width:100%">
+  </div>
+  </div>
+</div>
+
+  
+<!-- Clear floats -->
+<div class="w3-clear"></div><br><br>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-margin-top w3-opacity">
+ <div class="w3-xlarge w3-padding-32">
+   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+   <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+   <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+   <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+ </div>
+  <p style="font-weight:normal">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className.indexOf("w3-row-padding") == -1) {
+        x.className += " w3-row-padding";
+    } else {
+        x.className = x.className.replace(" w3-row-padding", "");
+    }
+}
+
+// Open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+
+</body>
+</html>
